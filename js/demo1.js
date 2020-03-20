@@ -34,4 +34,10 @@ function drawPiston(x,y,size,angle) {
 
 var theta = 0;
 
-setInterval(function(){ drawPiston(100,100,100,theta*6.28/360); theta+= 10;}, 10);
+setInterval(function(){ 
+	drawPiston(100,100,100,theta*6.28/360); 
+	drawPiston(300,100,100,(theta+90)*6.28/360); 
+	theta+= 10;
+	
+	
+}, 10);
